@@ -11,7 +11,7 @@ const jwt= require('jsonwebtoken')
 server.use(router)
 server.use(jwt)
 
-const port=4000||Process.env.port
+const port=4000||process.env.PORT
 server.listen(port,()=>{
     console.log(`-------Server started at the port ${port}`);
 })
